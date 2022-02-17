@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Colosseum encounter randomizer</title>
+        <style>
+            body {background-color: rgb(36, 36, 119);}
+            div.encounters {
+                padding: 10px;
+                width: 420px;
+                height:320px;
+            }
+            .container {
+                position: relative;
+                padding-left: 140px;
+            }
+            h1 {
+                color: darkgoldenrod;
+                text-align: center;
+                font-size: 50px;
+            }
+            p {
+                background-color: black;
+                color: darkgoldenrod; 
+                text-indent: 20px;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            img {
+                padding-left: 100px;
+            }
+            #Phenac {
+                position: relative;
+                top: -344px;
+                left: 465px;
+            }
+            #P_Town {
+                position: relative;
+                top: -688px;
+                left: 925px;
+            }
+            #P_Bldg {
+                position: relative;
+                top: -1032px;
+                left: 1385px;
+            }
+            #P_Cave {
+                position: relative;
+                top: -1000px;
+            }
+            #MB_Hideout {
+                position: relative;
+                top: -1344px;
+                left: 465px;
+            }
+            #Duking {
+                position: relative;
+                top: -1688px;
+                left: 925px;
+            }
+            #Agate {
+                position: relative;
+                top: -2032px;
+                left: 1385px;
+            }
+            #Battle {
+                position: relative;
+                top: -2000px;
+            }
+            #Under {
+                position: relative;
+                top: -2344px;
+                left: 465px;
+            }
+            #Subway {
+                position: relative;
+                top: -2688px;
+                left: 925px;
+            }
+            #Shadow {
+                position: relative;
+                top: -3032px;
+                left: 1385px;
+            }
+            #Realgam {
+                position: relative;
+                top: -3000px;
+            }
+            #R_Tower {
+                position: relative;
+                top: -3340px;
+                left: 465px;
+            }
+            #Tower {
+                position: relative;
+                top: -3680px;
+                left: 925px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!-- Header text and image -->
+        <h1>Pokemon Colosseum encounter Randomizer</h1>
+        <div class="container">
+            <img src='PokeAssets/Pokemon_Colosseum.png' alt='Cover' width="1500" height="500" style="width: 1400px; height: 400; object-fit: cover; object-position: 0 -110px;">
+        </div>
+  <!-- divs to display each pokemon encounter -->
+        <div id="Mayor" class="encounters">
+            <p>------------- Mayor's House -------------</p>
+            <p>only one encounter here: </p>
+            <img src="PokeAssets/Makuhita.png" alt="Makuhita" width="200" height="200">
+        </div>
+
+        <div id="Phenac" class="encounters">
+            <p>-------------- Phenac City --------------</p>
+            <button type="button" class="phenac">Roll</button>
+                <div id="city">
+                
+                </div>
+        </div>
+
+        <div id="P_Town" class="encounters">
+            <p>-------------- Pyrite Town --------------</p>
+            <button type="button" class="pyrite_town">Roll</button>
+            <div id="town">
+
+            </div>
+        </div>
+
+        <div id="P_Bldg" class="encounters">
+            <p>--------------- Pyrite Bldg ---------------</p>
+            <button type="button" class="pyrite_bldg">Roll</button>
+            <div id="bldg">
+
+            </div>
+        </div>
+
+        <div id="P_Cave" class="encounters">
+            <p>--------------- Pyrite Cave ---------------</p>
+            <button type="button" class="pyrite_cave">Roll</button>
+            <div id="cave">
+    
+            </div>
+        </div>
+
+        <div id="MB_Hideout" class="encounters">
+            <p>--------------- Pyrite Cave ---------------</p>
+            <p>only one encounter here: </p>
+            <img src="PokeAssets/Sudowoodo.png" alt="Sudowoodo" width="200" height="200">
+        </div>
+
+        <div id="Duking" class="encounters">
+            <p>------------ Duking's House ------------</p>
+            <p>given as a gift</p>
+            <img src="PokeAssets/Plusle.png" alt="Plusle" width="200" height="200">
+        </div>
+
+        <div id="Agate" class="encounters">
+            <p>-------------- Agate Village --------------</p>
+            <p>only one encounter here: </p>
+            <img src="PokeAssets/Hitmontop.png" alt="Hitmontop" width="200" height="200">
+        </div>
+
+        <div id="Battle" class="encounters">
+            <p>---------------- Mt. Battle ----------------</p>
+            <p>only one encounter here: </p>
+            <img src="PokeAssets/Entei.png" alt="Entei" width="200" height="200">
+        </div>
+
+        <div id="Under" class="encounters">
+            <p>--------------- The Under ---------------</p>
+            <button type="button" class="under">Roll</button>
+            <div id="under">
+    
+            </div>
+        </div>
+
+        <div id="Subway" class="encounters">
+            <p>---------- The Under Subway ----------</p>
+            <button type="button" class="under_sub">Roll</button>
+            <div id="subway">
+    
+            </div>
+        </div>
+
+        <div id="Shadow" class="encounters">
+            <p>--------- Shadow PKMN Lab ---------</p>
+            <button type="button" class="pkmn_lab">Roll</button>
+            <div id="lab">
+    
+            </div>
+        </div>
+
+        <div id="Realgam" class="encounters">
+            <p>--------- Realgam Tower Dome ---------</p>
+            <button type="button" class="realgam">Roll</button>
+            <div id="realgam">
+    
+            </div>
+        </div>
+
+        <div id="R_Tower" class="encounters">
+            <p>------------- Realgam Tower -------------</p>
+            <p>only one encounter here: </p>
+            <img src="PokeAssets/Skarmory.png" alt="Skarmory" width="200" height="200">
+        </div>
+
+        <div id="Tower" class="encounters">
+            <p>----------- Tower Colosseum -----------</p>
+            <button type="button" class="tower">Roll</button>
+            <div id="colosseum">
+    
+            </div>
+        </div>
+
+        <script src="Colosseum_Randomizer.js" charset="utf-8"></script>
+    </body>
+</html>
